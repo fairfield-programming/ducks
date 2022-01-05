@@ -1,6 +1,6 @@
 {
   "name": "duckgen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The package for dealing with all the ducks created and managed by the Fairfield Programming Association.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
