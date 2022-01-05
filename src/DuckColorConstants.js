@@ -17,6 +17,17 @@ const yellow = "#F7D23D";
 const blue = "#4C89E4";
 const red = "#E05050";
 
+// Check if Gradient Background
+function gradientBackground(trueDuckData) {
+
+    // Not the Best Code, but it is Forward Compatible
+    if (trueDuckData.color === 'url(#rainbow)' || trueDuckData.beakColor === 'url(#rainbow)') return true;
+
+    // If not triggered, its not a gradient :(
+    return false;
+
+}
+
 // Gradient Include
 const gradientData = 
 `<defs>
@@ -35,7 +46,15 @@ const gradientData =
     </linearGradient>
 </defs>`;
 
+// Export that Stuff
 module.exports = {
     colorList,
-    gradientData
+    gradientData,
+    gradientBackground,
+    black,
+    white,
+    brown,
+    yellow,
+    blue,
+    red
 };
