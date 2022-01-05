@@ -47,12 +47,26 @@ function generateDuck(duckData) {
     // Setup the Output
     const output = [];
 
-    // Add the Body (Spread it First)
-    output.push(...getItemString("body", trueDuckData.tail));
-
     // If theres a Gradient Background, Add It In
-    if (gradientBackground(trueDuckData)) output.push(gradientData);  
+    if (colors.isGradientBackground(trueDuckData)) output.push(colors.gradientData); 
 
-    
+    // Add the Parts (Spread them First)
+    output.push(...getItemString("body", trueDuckData.tail));
+    output.push(...getItemString("smoke", trueDuckData.smoke));
+    output.push(...getItemString("eyes", trueDuckData.eyes));
+    output.push(...getItemString("beak", trueDuckData.beak));
+    output.push(...getItemString("items", trueDuckData.items));
+    output.push(...getItemString("wing", trueDuckData.wings));
+    output.push(...getItemString("hat", trueDuckData.hat));
+
+    // Create Some Output Text
+    let outputText = output.join("\n");
+
+    // Replace the Text with Color
+    outputText = outputText.replace(/DUCK_COLOR/g, trueDuckData.color);
+    outputText = outputText.replace(/BEAK_COLOR/g, trueDuckData.beakColor);
+
+    // Return the SVG
+    return outputText;
 
 }
