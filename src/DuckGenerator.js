@@ -70,3 +70,8 @@ function generateDuck(duckData) {
     return outputText;
 
 }
+
+module.exports = {
+    generateDuck,
+    getItemData
+};
