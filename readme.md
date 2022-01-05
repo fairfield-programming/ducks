@@ -1,13 +1,13 @@
 ![Duckgen](https://github.com/fairfield-programming/ducks/blob/master/.github/logo.png?raw=true)
 
-# Download
+## Download
 
 ```bash
 npm install duckgen
 ```
 
-# Features
+## Features
 
-# How to Use
+## How to Use
 
-# Contributing
+## Contributing
