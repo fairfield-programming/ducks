@@ -1,7 +1,23 @@
+// Color Index
 const colorList = [
-    ''
+    "#000000", // black
+    "#FFFFFF", // white
+    "#9D8009", // brown
+    "#F7D23D", // yellow
+    "#4C89E4", // blue
+    "#E05050", // red
+    "url(#rainbow)", // rainbow
 ];
 
+// Colors With Names
+const black = "#000000";
+const white = "#FFFFFF";
+const brown = "#9D8009";
+const yellow = "#F7D23D";
+const blue = "#4C89E4";
+const red = "#E05050";
+
+// Gradient Include
 const gradientData = 
 `<defs>
     <linearGradient id='rainbow' gradientTransform='translate(0.2, 0), rotate(20)'>

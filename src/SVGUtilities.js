@@ -11,3 +11,26 @@ function stripParentTags(input) {
     return output.trim();
 
 }
+
+function getItemData(type, number) {
+
+    // Get the File Path
+    const itemPath = path.join(
+      __dirname,
+      "../../../",
+      "ducks/",
+      type,
+      `/${number}.svg`,
+    );
+  
+    // Check if File Exists
+    if (!fs.existsSync(itemPath)) return [];
+  
+    // Get the File Data
+    const itemData = fs.readFileSync(itemPath, "ascii");
+    const strippedData = stripSVGData(itemData);
+  
+    // Return the String
+    return strippedData.split("\n");
+
+  }
