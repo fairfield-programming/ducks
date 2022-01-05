@@ -2,6 +2,8 @@
 
 ## Download
 
+Since the Fairfield Programming Association's duck generator is built on top of node.js and npm, you need to have both of those installed as prerequisites. After that, to download the project, you have to run the below command. From there, you can include it in your node.js code by using the import or require system.
+
 ```bash
 npm install duckgen
 ```
