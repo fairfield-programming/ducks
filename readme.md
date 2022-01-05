@@ -12,6 +12,16 @@ npm install duckgen
 
 We didn't want to use people's faces for the profile pictures. This was for three reasons: we didn't want to pay for hosting the image files, we were scared of what people would upload, and since our main audience is minors, we didn't want their faces to be publicly available. To solve these problems, we decided to use rubber duck avatars instead of photos. Users are able to customize their ducks by adding glasses, hats, items, etc (and they can even set their own colors).
 
+<p align="center">
+
+<img width="100" src="https://fairfield-programming.herokuapp.com/duck/10001000007000053/30" alt="Cool Duck">
+<img width="100" src="https://fairfield-programming.herokuapp.com/duck/10102000005000045/30" alt="Red Duck">
+<img width="100" src="https://fairfield-programming.herokuapp.com/duck/10603000000000004/30" alt="Blue Duck">
+<img width="100" src="https://fairfield-programming.herokuapp.com/duck/10001000000000011/30" alt="Outline Duck">
+<img width="100" src="https://fairfield-programming.herokuapp.com/duck/10000000006000012/30" alt="Brown Duck">
+
+</p>
+
 ## How to Use
 
 ## Contributing
