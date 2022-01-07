@@ -5,6 +5,7 @@
   - [No Vulgar Items, Text, or Ideas](#no-vulgar-items-text-or-ideas)
   - [No Politics](#no-politics)
 - [Art Rules](#art-rules)
+  - [Duck Size](#duck-size)
   - [Allowed Colors](#allowed-colors)
   - [Line Width](#line-width)
 
