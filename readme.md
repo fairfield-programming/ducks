@@ -24,6 +24,23 @@ We didn't want to use people's faces for the profile pictures. This was for thre
 
 ## How to Use
 
+After running `npm install duckgen`, you can use it in your code using one of the two below systems. The API is very simple and you can check out the code to the project for the API reference. 
+
+**ES6**
+```javascript
+
+import "duckgen" as duckgen;
+
+```
+
+**Node.js Require**
+
+```javascript
+
+const duckgen = require("duckgen");
+
+```
+
 ## Contributing
 
 If you simply star the repo, this helps us out tremendiously. Past that, if you share this repo with your friends, that helps a lot too. If you are feeling super generous, then you can find some issues that you have with the project and try to help us with them.
