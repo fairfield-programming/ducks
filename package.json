@@ -11,7 +11,17 @@
     "type": "git",
     "url": "git+https://github.com/fairfield-programming/ducks.git"
   },
-  "keywords": [],
+  "keywords": [
+    "animal",
+    "duck",
+    "ducks",
+    "svg",
+    "generator",
+    "procedural",
+    "images",
+    "profile",
+    "picture"
+  ],
   "author": "William McGonagle",
   "license": "ISC",
   "bugs": {
