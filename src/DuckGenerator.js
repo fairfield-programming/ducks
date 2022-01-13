@@ -11,8 +11,7 @@ function getItemData(type, number) {
     // Get the File Path
     const itemPath = path.join(
         __dirname,
-        "../../../",
-        "ducks/",
+        "../ducks/",
         type,
         `/${number}.svg`,
     );
@@ -40,8 +39,8 @@ function generateDuck(duckData) {
         smoke: duckData.smoke || 0,
         tail: duckData.tail || 0,
         item: duckData.item || 0,
-        color: colors[duckData.color] || colors[3],
-        beakColor: colors[duckData.beakColor] || colors[5],
+        color: colors.colorList[duckData.color] || colors.colorList[3],
+        beakColor: colors.colorList[duckData.beakColor] || colors.colorList[5],
     };
     
     // Setup the Output
@@ -51,13 +50,13 @@ function generateDuck(duckData) {
     if (colors.isGradientBackground(trueDuckData)) output.push(colors.gradientData); 
 
     // Add the Parts (Spread them First)
-    output.push(...getItemString("body", trueDuckData.tail));
-    output.push(...getItemString("smoke", trueDuckData.smoke));
-    output.push(...getItemString("eyes", trueDuckData.eyes));
-    output.push(...getItemString("beak", trueDuckData.beak));
-    output.push(...getItemString("items", trueDuckData.items));
-    output.push(...getItemString("wing", trueDuckData.wings));
-    output.push(...getItemString("hat", trueDuckData.hat));
+    output.push(...getItemData("body", trueDuckData.tail));
+    output.push(...getItemData("smoke", trueDuckData.smoke));
+    output.push(...getItemData("eyes", trueDuckData.eyes));
+    output.push(...getItemData("beak", trueDuckData.beak));
+    output.push(...getItemData("items", trueDuckData.items));
+    output.push(...getItemData("wing", trueDuckData.wings));
+    output.push(...getItemData("hat", trueDuckData.hat));
 
     // Create Some Output Text
     let outputText = output.join("\n");
