@@ -11,8 +11,7 @@ function getItemData(type, number) {
     // Get the File Path
     const itemPath = path.join(
         __dirname,
-        "../../../",
-        "ducks/",
+        "../ducks/",
         type,
         `/${number}.svg`,
     );
@@ -40,8 +39,8 @@ function generateDuck(duckData) {
         smoke: duckData.smoke || 0,
         tail: duckData.tail || 0,
         item: duckData.item || 0,
-        color: colors[duckData.color] || colors[3],
-        beakColor: colors[duckData.beakColor] || colors[5],
+        color: colors.colorList[duckData.color] || colors.colorList[3],
+        beakColor: colors.colorList[duckData.beakColor] || colors.colorList[5],
     };
     
     // Setup the Output
