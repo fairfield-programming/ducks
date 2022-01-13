@@ -1,6 +1,6 @@
 {
   "name": "duckgen",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The package for dealing with all the ducks created and managed by the Fairfield Programming Association.",
   "main": "./src/index.js",
   "scripts": {
