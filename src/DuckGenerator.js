@@ -51,13 +51,13 @@ function generateDuck(duckData) {
     if (colors.isGradientBackground(trueDuckData)) output.push(colors.gradientData); 
 
     // Add the Parts (Spread them First)
-    output.push(...getItemString("body", trueDuckData.tail));
-    output.push(...getItemString("smoke", trueDuckData.smoke));
-    output.push(...getItemString("eyes", trueDuckData.eyes));
-    output.push(...getItemString("beak", trueDuckData.beak));
-    output.push(...getItemString("items", trueDuckData.items));
-    output.push(...getItemString("wing", trueDuckData.wings));
-    output.push(...getItemString("hat", trueDuckData.hat));
+    output.push(...getItemData("body", trueDuckData.tail));
+    output.push(...getItemData("smoke", trueDuckData.smoke));
+    output.push(...getItemData("eyes", trueDuckData.eyes));
+    output.push(...getItemData("beak", trueDuckData.beak));
+    output.push(...getItemData("items", trueDuckData.items));
+    output.push(...getItemData("wing", trueDuckData.wings));
+    output.push(...getItemData("hat", trueDuckData.hat));
 
     // Create Some Output Text
     let outputText = output.join("\n");
@@ -71,7 +71,19 @@ function generateDuck(duckData) {
 
 }
 
+function formatSVG(data, zoom) {
+  // If no data, return a blank svg.  If no zoom const, return a duck at default zoom.
+  if (!data) return `<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>`;
+  if (!zoom) return `<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">\n${data}\n</svg>`;
+
+  // If there is a zoom, scale appropriately and modify svg dimensions accordingly, then return. 
+  const size = 200 - zoom * 2;
+
+  return `<svg width="${size}" height="${size}" viewBox="${zoom} ${zoom} ${size} ${size}" fill="none" xmlns="http://www.w3.org/2000/svg">\n${data}\n</svg>`;
+}
+
 module.exports = {
     generateDuck,
-    getItemData
+    getItemData,
+    formatSVG
 };
