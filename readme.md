@@ -1,5 +1,8 @@
 # ![Duckgen](https://github.com/fairfield-programming/ducks/blob/master/.github/logo.png?raw=true)
 
+![Code Grade](https://img.shields.io/badge/dynamic/json?color=green&label=Grade&query=grade&url=https%3A%2F%2Fraw.githubusercontent.com%2Ffairfield-programming%2Fducks%2Fmaster%2F.github%2Fmetrics.json)
+![Dependency Count](https://img.shields.io/badge/dynamic/json?color=blue&label=Dependencies&query=indirectDependenciesCount&url=https%3A%2F%2Fraw.githubusercontent.com%2Ffairfield-programming%2Fducks%2Fmaster%2F.github%2Fmetrics.json)
+
 ## Download
 
 Since the Fairfield Programming Association's duck generator is built on top of node.js and npm, you need to have both of those installed as prerequisites. After that, to download the project, you have to run the below command. From there, you can include it in your node.js code by using the import or require system.
@@ -24,9 +27,10 @@ We didn't want to use people's faces for the profile pictures. This was for thre
 
 ## How to Use
 
-After running `npm install duckgen`, you can use it in your code using one of the two below systems. The API is very simple and you can check out the code to the project for the API reference. 
+After running `npm install duckgen`, you can use it in your code using one of the two below systems. The API is very simple and you can check out the code to the project for the API reference.
 
 **ES6**
+
 ```javascript
 
 import "duckgen" as duckgen;
@@ -36,9 +40,7 @@ import "duckgen" as duckgen;
 **Node.js Require**
 
 ```javascript
-
 const duckgen = require("duckgen");
-
 ```
 
 ## Contributing
