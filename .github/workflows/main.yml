@@ -1,0 +1,20 @@
+name: Lint, Prettify, Test, and Score Code
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run the EaF Linter
+        run: npx eaf-linter
+
+      - name: Commit Changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          messages: 🦆 Code Fixed with EaF-Lint!
