@@ -39,7 +39,7 @@ function generateDuck(duckData) {
         smoke: duckData.smoke || 0,
         tail: duckData.tail || 0,
         item: duckData.item || 0,
-        color: colors.colorList[duckData.color] || colors.colorList[3],
+        color: colors.colorList[duckData.featherColor] || colors.colorList[3],
         beakColor: colors.colorList[duckData.beakColor] || colors.colorList[5],
     };
     
