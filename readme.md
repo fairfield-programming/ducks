@@ -33,7 +33,7 @@ After running `npm install duckgen`, you can use it in your code using one of th
 
 ```javascript
 
-import "duckgen" as duckgen;
+import duckgen from "duckgen";
 
 ```
 
